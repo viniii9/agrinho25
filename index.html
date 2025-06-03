@@ -6,14 +6,121 @@
   <title>Sabores da Terra & Conexões Urbanas</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      cursor: none;
+    }
+    .custom-cursor {
+      width: 20px;
+      height: 20px;
+      background-color: rgba(168, 213, 186, 0.8);
+      border-radius: 50%;
+      position: fixed;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      transition: transform 0.1s ease;
+      z-index: 9999;
+    }
+  </style>
 </head>
 <body>
-  <div class="overlay">
-    <h1 class="title">Sabores da Terra & Conexões Urbanas</h1>
-    <p class="subtitle">
-      Uma plataforma que celebra a riqueza do campo e a criatividade da cidade através da gastronomia, cultura e sustentabilidade. Descubra os sabores que unem tradição e inovação.
-    </p>
-    <button class="cta-button">Explorar Histórias</button>
-  </div>
+  <div class="custom-cursor" id="custom-cursor"></div>
+
+  <header class="main-header">
+    <div class="container">
+      <h1 class="logo">Sabores da Terra</h1>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#produtores">Produtores</a></li>
+          <li><a href="#receitas">Receitas</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="overlay">
+      <h2>Conectando o campo à cidade através da culinária e cultura</h2>
+      <p>Uma jornada pelos sabores autênticos da terra que chegam à mesa urbana.</p>
+      <button class="cta-button">Explorar Histórias</button>
+    </div>
+  </section>
+
+  <section id="sobre" class="section">
+    <div class="container">
+      <h2>Sobre o Projeto</h2>
+      <p>
+        "Sabores da Terra & Conexões Urbanas" é uma iniciativa que valoriza a origem dos alimentos, aproximando produtores rurais de consumidores urbanos. Acreditamos na gastronomia como ferramenta de conexão, identidade e sustentação cultural.
+      </p>
+    </div>
+  </section>
+
+  <section id="produtores" class="section">
+    <div class="container">
+      <h2>Conheça os Produtores</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Joana - Orgânicos do Vale</h3>
+          <p>Produtora de hortaliças orgânicas no interior de MG.</p>
+        </div>
+        <div class="card">
+          <h3>Seu Carlos - Mel Puro</h3>
+          <p>Apicultor que leva sabor e cura da terra para a cidade.</p>
+        </div>
+        <div class="card">
+          <h3>Maria - Queijos Artesanais</h3>
+          <p>Queijeira premiada que mistura tradição e inovação.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="receitas" class="section">
+    <div class="container">
+      <h2>Receitas com História</h2>
+      <ul class="recipe-list">
+        <li>
+          <h4>Pão de fermentação natural da fazenda</h4>
+          <p>Feito com farinha de trigo integral cultivado na região serrana.</p>
+        </li>
+        <li>
+          <h4>Salada de folhas e flores com mel de abelha nativa</h4>
+          <p>Uma explosão de sabores frescos e saudáveis.</p>
+        </li>
+        <li>
+          <h4>Risoto de cogumelos silvestres</h4>
+          <p>Harmonia entre o terroir rural e a sofisticação urbana.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contato" class="section">
+    <div class="container">
+      <h2>Entre em Contato</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Nome" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Mensagem" rows="5" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Sabores da Terra & Conexões Urbanas. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    const cursor = document.getElementById('custom-cursor');
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = `${e.clientX}px`;
+      cursor.style.top = `${e.clientY}px`;
+    });
+  </script>
 </body>
 </html>
