@@ -1,170 +1,135 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>agrinho 25</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sabores da Terra e Conexões Urbanas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-    <link rel="stylesheet" href="style.css">
+    body, html {
+      height: 100%;
+      font-family: 'Montserrat', sans-serif;
+      overflow: hidden;
+    }
+
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+
+    .overlay {
+      position: relative;
+      z-index: 1;
+      padding: 5vh 10vw;
+      color: white;
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(8px);
+    }
+
+    .title {
+      font-size: 3rem;
+      font-weight: 700;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      max-width: 600px;
+    }
+
+    .cta-button {
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      background: #ffb347;
+      border: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .cta-button:hover {
+      background: #ffa500;
+    }
+
+    @media (max-width: 768px) {
+      .title {
+        font-size: 2rem;
+      }
+      .subtitle {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
+  <canvas id="bg"></canvas>
 
-    <header>
-   <div class="cabecalho img">
-       <img class="logo__principal" src="img/logo.png" alt="Logo" />
-       <h1 class="texto__cabecalho">
-           Agrofloresta e a importância da polinização.
-       </h1>
-       <a class="cabecalho__botao" href="https://www.nre.seed.pr.gov.br/modules/conteudo/conteudo.php?conteudo=53&quot; target="_blank" >NRE IVAIPORÃ</a>
-           <br />
-   </div>
-</header>
+  <div class="overlay">
+    <h1 class="title">Sabores da Terra & Conexões Urbanas</h1>
+    <p class="subtitle">
+      Uma experiência que une o campo e a cidade através da culinária, cultura e sustentabilidade. Descubra as histórias por trás dos ingredientes, dos produtores e da gastronomia que transforma.
+    </p>
+    <button class="cta-button">Explorar</button>
+  </div>
 
-<!-- primeira seção -->
-<section class="container">
-   <div class="secao1__descricao">
-       <p class="secao1__titulo">O que é uma Agrofloresta?</p>
-       <p class="secao1__texto">
-       Agrofloresta é um sistema de uso da terra que combina árvores,
-       arbustos, culturas agrícolas e/ou animais em um arranjo ecológico e
-       produtivo. Esses sistemas visam imitar as características das
-       florestas naturais, promovendo a biodiversidade, a reciclagem de
-       nutrientes, a conservação do solo e a regulação do clima. Eles também
-       podem proporcionar uma fonte sustentável de alimentos, produtos
-       florestais, medicamentos e outros recursos. É uma prática que tem
-       ganhado destaque por sua abordagem sustentável e amigável ao meio
-       ambiente.
-       </p>
-   </div>
-   <img src="img/bananas.png" alt="imagem de um bananal" class="secao1__imagem"/>
-</section>
-<!-- fim da primeira seção -->
+  <!-- Three.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
 
-<!-- segunda seção -->
-<section>
-   <div class="secao2__titulo">
-       <p class="secao2__img__titulo">A produção de mel.</p>
-   </div>
-   <div class="secao2__imagens">
-       <div>
-           <img src="img/1.png" alt="Homen colhendo mel" />
-       </div>
-       <div>
-           <img src="img/2.png" alt="Homen colhendo mel" />
-       </div>
-       <div>
-           <img src="img/3.png" alt="homen coletando mel" />
-       </div>
-   </div>
-   <div class="secao2__subtitulo">
-       <h2 class="secao2__img__subtitulo">
-       As abelhas são responsáveis pela produção de mel, cera e outros
-       produtos apícolas que podem representar uma fonte adicional de renda
-       para os agricultores
-       </h2>
-   </div>
-</section>
-<!-- fim da segunda -->
+  <!-- Simple 3D scene -->
+  <script>
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(
+      75,
+      window.innerWidth / window.innerHeight,
+      0.1,
+      1000
+    );
 
-<!--terceira seção informações -->
-<section  class="container">
-    <div  class="secao3__imagem img">
-        <div  class="secao3__texto">
-            <h1  class="secao3__info">
-            "Descubra a doçura da natureza em cada gota de mel e a versatilidade
-            dos produtos da colmeia. Experimente a pureza e os benefícios dos
-            nossos produtos apícolas!"
-            </h1>
-                <p  class="secao3__info">LuzIA -02-04-24</p>
-        </div>
-    </div>
-</section>
-<!-- fim da terceira seção informações -->
+    const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById("bg"), alpha: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    camera.position.z = 5;
 
-<!-- quarta seção contato -->
-<section  class="container secao4">
-    <div  class="secao4__imagem">
-        <img src="img/pote-mel.png" alt="ilustração de potes de mel"/>
-    </div>
-    <div  class="secao4__container">
-        <p  class="secao4__titulo">Contato</p>
-        <p  class="secao4__texto">Luzia</p>
-            <br />
-            <br />
-        <p  class="secao4__email">
-        <span>E-mail: </span>
-        <a href="luzia.siscati@escola.pr.gov.br">luzia.siscati@escola.pr.gov.br</a>
-        </p>
-            <br />
-        <p  class="secao4__fone"><span>Telefone: </span><a  href="tel:+554334725739">(43)3472 57-39</a></p>
-            <br />
-        <p  class="secao4__endereco">
-        <span>Endereço: </span>Av. Minas Gerais, 295 - Ivaiporã, PR, 86870-000
-        </p>
-    </div>
-</section>
-<!-- fim quarta seção contato -->
+    // Create 3D rotating fruits
+    const textureLoader = new THREE.TextureLoader();
+    const geometry = new THREE.SphereGeometry(1, 32, 32);
+    const material = new THREE.MeshStandardMaterial({
+      map: textureLoader.load('https://i.imgur.com/wYSU4Tu.jpg'), // textura de maçã ou outro alimento
+    });
+    const sphere = new THREE.Mesh(geometry, material);
+    scene.add(sphere);
 
-<!--quinta seção Relogio clima -->
-<section  class="container relogio">
-    <div  class="aba-conteudo ativo">
-        <h3  class="aba-conteudo-titulo-principal">Relógio do clima</h3>
-        <h4  class="aba-conteudo-titulo-secundario">Tempo restante para limitar o aquecimento global</h4>
-        <div  class="contador">
-            <div  class="contador-digito">
-                <p  class="contador-digito-numero"  id="dias0">7</p>
-                <p  class="contador-digito-texto">dias</p>
-            </div>
-            <div  class="contador-digito">
-                <p  class="contador-digito-numero"  id="horas0">7</p>
-                <p  class="contador-digito-texto">horas</p>
-            </div>
-            <div  class="contador-digito">
-                <p  class="contador-digito-numero"  id="min0">7</p>
-                <p  class="contador-digito-texto">min</p>
-            </div>
-            <div  class="contador-digito">
-                <p  class="contador-digito-numero"  id="seg0">7</p>
-                <p  class="contador-digito-texto">seg</p>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- fim da quinta seção relogio do clima -->
+    const light = new THREE.PointLight(0xffffff, 1);
+    light.position.set(5, 5, 5);
+    scene.add(light);
 
-<!--rodapé  -->  
-    <footer class="rodape">
-      <img src="img/logo.png" alt="ceaa" class="rodape__logo" />
-      <ul class="rodape__lista">
-        <li class="lista__link">
-          <a href="https://www.sistemafaep.org.br/agrinho/">AGRINHO 2024</a>
-        </li>
-        <li class="lista__link">
-          <a href="https://www.instagram.com/sistema.faep/">SENAR</a&gt;
-        </li>
-        <li class="lista__link">
-          <a
-            href="https://www.nre.seed.pr.gov.br/modules/conteudo/conteudo.php?conteudo=53&quot;
-            >NRE IVAIPORÃ</a
-          >
-        </li>
-        <li  class="lista__link">
-          <a  
-            href="https://www.nre.seed.pr.gov.br/modules/conteudo/conteudo.php?conteudo=50&quot;
-            >NRE GUARAPUAVA
-          </a>
-        </li>
-        <li  class="lista__link">
-          <a  
-            href="https://www.nre.seed.pr.gov.br/modules/conteudo/conteudo.php?conteudo=61&quot;
-            >NRE PATO BRANCO
-          </a>
-        </li>
-      </ul>
-      <p class="rodape__texto">Site modelo Agrinho 2024</p>
-      <p class="rodape__texto">® 2024 -NRE IVAIPORÃ</p>
-    </footer>
-    <!-- fim rodapé-->
-    
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.4);
+    scene.add(ambientLight);
+
+    function animate() {
+      requestAnimationFrame(animate);
+      sphere.rotation.y += 0.005;
+      renderer.render(scene, camera);
+    }
+
+    animate();
+
+    window.addEventListener('resize', () => {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+  </script>
 </body>
 </html>
