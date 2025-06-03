@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sabores da Terra & Conexões Urbanas</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -13,12 +13,12 @@
     .custom-cursor {
       width: 20px;
       height: 20px;
-      background-color: rgba(168, 213, 186, 0.8);
+      background-color: rgba(168, 213, 186, 0.9);
       border-radius: 50%;
       position: fixed;
       transform: translate(-50%, -50%);
       pointer-events: none;
-      transition: transform 0.1s ease;
+      transition: transform 0.08s ease-out;
       z-index: 9999;
     }
   </style>
@@ -51,9 +51,7 @@
   <section id="sobre" class="section">
     <div class="container">
       <h2>Sobre o Projeto</h2>
-      <p>
-        "Sabores da Terra & Conexões Urbanas" é uma iniciativa que valoriza a origem dos alimentos, aproximando produtores rurais de consumidores urbanos. Acreditamos na gastronomia como ferramenta de conexão, identidade e sustentação cultural.
-      </p>
+      <p>“Sabores da Terra & Conexões Urbanas” valoriza a origem dos alimentos, conectando produtores rurais e consumidores urbanos através da gastronomia, cultura e sustentabilidade.</p>
     </div>
   </section>
 
@@ -86,7 +84,7 @@
           <p>Feito com farinha de trigo integral cultivado na região serrana.</p>
         </li>
         <li>
-          <h4>Salada de folhas e flores com mel de abelha nativa</h4>
+          <h4>Salada de flores e mel de abelha nativa</h4>
           <p>Uma explosão de sabores frescos e saudáveis.</p>
         </li>
         <li>
@@ -101,8 +99,8 @@
     <div class="container">
       <h2>Entre em Contato</h2>
       <form class="contact-form">
-        <input type="text" placeholder="Nome" required>
-        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Nome" required />
+        <input type="email" placeholder="Email" required />
         <textarea placeholder="Mensagem" rows="5" required></textarea>
         <button type="submit">Enviar</button>
       </form>
@@ -115,11 +113,22 @@
     </div>
   </footer>
 
+  <!-- Elemento decorativo 3D com interação -->
+  <div class="animated-3d"></div>
+
   <script>
     const cursor = document.getElementById('custom-cursor');
-    document.addEventListener('mousemove', e => {
+    document.addEventListener('mousemove', (e) => {
       cursor.style.left = `${e.clientX}px`;
       cursor.style.top = `${e.clientY}px`;
+    });
+
+    // Rotação 3D simulada com movimento do mouse
+    const cube = document.querySelector('.animated-3d');
+    document.addEventListener('mousemove', (e) => {
+      const xAxis = (window.innerWidth / 2 - e.pageX) / 25;
+      const yAxis = (window.innerHeight / 2 - e.pageY) / 25;
+      cube.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
     });
   </script>
 </body>
