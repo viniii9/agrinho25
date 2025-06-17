@@ -210,6 +210,31 @@ header, footer {
   height: 80vh;
   display: block;
 }
+.main-header {
+  position: relative;
+  background: url('photo-1625246333195-78d9c38ad449.jpeg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.main-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4); /* escurece a imagem para legibilidade */
+  z-index: 1;
+}
+
+.main-header .container {
+  position: relative;
+  z-index: 2;
+}
+
 
 canvas {
   width: 100%;
