@@ -48,10 +48,11 @@ body {
 }
 .main-nav {
   position: fixed;
-  top: 150px;
+  top: 60px; /* menor valor = mais alto na tela */
   left: 20px;
   z-index: 1000;
 }
+
 
 .main-nav ul {
   list-style: none;
