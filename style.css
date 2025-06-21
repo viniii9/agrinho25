@@ -47,28 +47,33 @@ body {
   color: #0bda5e;
 }
 .main-nav {
-  margin-top: 1.5rem; /* empurra para baixo */
-  text-align: left;   /* alinha à esquerda */
-  padding-left: 2rem; /* desloca para a esquerda */
+  position: fixed;
+  top: 150px; /* mais para baixo */
+  left: 20px; /* bem no canto esquerdo */
+  z-index: 1000;
 }
 
 .main-nav ul {
   list-style: none;
-}
-
-.main-nav li {
-  display: inline-block;
-  margin-right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .main-nav a {
   font-size: 1.4rem;
-  padding: 0.5rem 1rem;
-  color: #000; /* cor preta */
+  color: #000;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s;
-  background-color: transparent;
+  padding: 0.5rem 1rem;
+  background-color: #0bda5e;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.main-nav a:hover {
+  background-color: #000;
+  color: #0bda5e;
 }
 
 .main-nav a:hover {
