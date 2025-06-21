@@ -16,7 +16,7 @@ body {
 
 .main-header {
   background-color: #1b1b1b;
-  color: #a8d5ba;
+  color: #0bda5e;
   padding: 20px 0;
   position: sticky;
   top: 0;
@@ -26,7 +26,7 @@ body {
 .logo {
   font-size: 2rem;
   font-weight: bold;
-  color: #a8d5ba;
+  color: #0bda5e;
 }
 
 .main-nav ul {
@@ -44,7 +44,7 @@ body {
 }
 
 .main-nav a:hover {
-  color: #a8d5ba;
+  color: #0bda5e;
 }
 
 .hero {
@@ -65,7 +65,7 @@ body {
 
 .hero h2 {
   font-size: 3rem;
-  color: #a8d5ba;
+  color: #0bda5e;
   margin-bottom: 20px;
 }
 
@@ -96,7 +96,7 @@ body {
 }
 
 .section h2 {
-  color: #a8d5ba;
+  color: #0bda5e;
   margin-bottom: 30px;
   text-align: center;
   font-size: 2rem;
@@ -150,7 +150,7 @@ body {
 }
 
 .contact-form button {
-  background-color: #a8d5ba;
+  background-color: #0bda5e;
   color: #000;
   font-weight: bold;
   padding: 10px 20px;
@@ -170,7 +170,7 @@ body {
 .animated-3d {
   width: 100px;
   height: 100px;
-  background: linear-gradient(45deg, #a8d5ba, #3c4e3f);
+  background: linear-gradient(45deg, #0bda5e, #3c4e3f);
   margin: 30px auto;
   transform-style: preserve-3d;
   transform: rotateX(0deg) rotateY(0deg);
