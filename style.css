@@ -46,6 +46,20 @@ body {
 .main-nav a:hover {
   color: #0bda5e;
 }
+.main-nav a {
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+  color: #0bda5e;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+.main-nav a:hover {
+  color: #fff;
+}
+
 
 .hero {
   height: 100vh;
