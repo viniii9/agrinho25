@@ -14,4 +14,6 @@ Repositorio aluno
 
 ### Links para acessar o site 
 
-GitHub Pages (F
+GitHub Pages (https://viniii9.github.io/projeto-para-o-agrinho-2025/)
+
+Vercel (https://agrinho25-omega.vercel.app/#sobre)
