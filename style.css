@@ -46,15 +46,35 @@ body {
 .main-nav a:hover {
   color: #0bda5e;
 }
+.main-nav {
+  margin-top: 1.5rem; /* empurra para baixo */
+  text-align: left;   /* alinha à esquerda */
+  padding-left: 2rem; /* desloca para a esquerda */
+}
+
+.main-nav ul {
+  list-style: none;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+
 .main-nav a {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   padding: 0.5rem 1rem;
-  color: #0bda5e;
+  color: #000; /* cor preta */
   text-decoration: none;
   font-weight: bold;
-  display: inline-block;
   transition: color 0.3s;
+  background-color: transparent;
 }
+
+.main-nav a:hover {
+  color: #0bda5e;
+}
+
 
 .main-nav a:hover {
   color: #fff;
