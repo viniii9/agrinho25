@@ -211,26 +211,33 @@ body {
 }
 
 /* 3D Elements (placeholders for interaction) */
-.animated-3d {
-  width: 300px;
-  height: 300px;
-  perspective: 1000px;
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #f0f0f0; /* fundo geral da página */
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #222; /* cor de fundo do quadrado */
-  border-radius: 16px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
-  transition: transform 0.1s ease-out;
-}
-.animated-3d img {
-  width: 150px; /* ajuste o tamanho da imagem */
-  height: auto;
-  border-radius: 8px;
-  transform-style: preserve-3d;
-  pointer-events: none; /* evita interferência no efeito do mouse */
 }
 
+.animated-3d {
+  width: 200px;
+  height: 200px;
+  background-color: white; /* fundo do quadrado */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.1s ease-out;
+  perspective: 1000px;
+}
+
+.animated-3d img {
+  width: 100px; /* imagem menor */
+  height: auto;
+  border-radius: 8px;
+  pointer-events: none;
 }
 
 /* Mouse effect handler */
