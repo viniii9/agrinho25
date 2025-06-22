@@ -256,7 +256,7 @@ header, footer {
 }
 .main-header {
   position: relative;
-  background: url("/img/comida.jpeg") no-repeat center center;
+  background: url("img/comida.jpeg") no-repeat center center;
   background-size: cover;
   color: white;
   padding: 100px 20px;
