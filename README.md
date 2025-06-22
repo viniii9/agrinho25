@@ -8,7 +8,7 @@
 ### Site:Sabores da Terra e Conexês Urbanas
 
 # Referencias:
-imagens: Google
+imagens: Google, todas as imagens são usadas de sites gratuitos com liçença aberta
 
 Repositorio aluno https://github.com/viniii9/projeto-para-o-agrinho-2025
 
