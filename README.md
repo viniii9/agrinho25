@@ -82,6 +82,7 @@ O projeto traz:
 
 - Videos utilizados são públicos e localizados no YouTube, créditos: Alzana Almerinda (pão de fermentação natural) Vovó do interior (pão de milho caseiro)
 
+---
 ##  Link de acesso ao site publicado:
 
 👉 [https://viniii9.github.io/projeto-para-o-agrinho-2025/](https://viniii9.github.io/projeto-para-o-agrinho-2025/)
