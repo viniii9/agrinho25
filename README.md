@@ -1,22 +1,88 @@
-# Projeto agrinho2025
-### Autor:Marcos Vinicius de Moraes
-### Professor:Richardson schawarski
-### Colégio:Professor Reni Correia Gamper 
-### Cidade:Manoel ribas - Paraná 
+# 🌱 Projeto Agrinho 2025 - Sabores da Terra & Conexões Urbanas
 
-### Tema:Festejando a conexão campo-cidade
-### Site:Sabores da Terra e Conexês Urbanas
+  
 
-### Texto escrito por mim porém melhorado com inteligência artificial(I.A) Prompt utilizado: melhore esse texto para que fique mais formal, e resolução de alguns erros 
+## Tema: *"Festejando a conexão do campo com a cidade"*
+  ##  Autor: *Marcos Vinicius*
 
+ ###  Professor: *Richardson Schawarski* 
+---
+###  Colégio: Colégio Estadual Professor Reni Correia Gamper
+  
 
-# Referencias:
-imagens: Google, todas as imagens são usadas de sites gratuitos com liçença aberta
+## 👨‍💻 Categoria:
 
-Repositorio aluno https://github.com/viniii9/projeto-para-o-agrinho-2025
+*Categoria 4 – Programação Front-End (HTML + CSS)*
+---
+## 📝 Descrição do Projeto:
 
-### Links para acessar o site 
+  
 
-GitHub Pages (https://viniii9.github.io/projeto-para-o-agrinho-2025/)
+O site *"Sabores da Terra & Conexões Urbanas"* foi criado para fortalecer a ligação entre os produtores rurais e a população das cidades, mostrando a trajetória de quem trabalha no campo até os alimentos chegarem às mesas urbanas.
 
-Vercel (https://agrinho25-omega.vercel.app/#sobre)
+  
+
+O projeto traz:
+
+  
+
+- 🌾 Histórias reais de produtores rurais
+
+- 🍞 Receitas com ingredientes típicos do campo
+
+- 📞 Um formulário de contato para o público interagir
+
+- 💻 Layout responsivo para acesso via celular e computador
+
+- ♿ Recursos de acessibilidade: *modo alto contraste* e *controle de tamanho de fonte*
+
+---
+##  Tecnologias utilizadas:
+
+  
+
+-  *HTML5*
+
+-  *CSS3*
+
+-  *JavaScript*
+
+-  *GitHub Pages* (para hospedagem)
+
+---
+##  Recursos de Acessibilidade:
+
+  
+
+✅ Modo Alto Contraste
+
+✅ Controles para aumentar, diminuir ou resetar o tamanho da fonte
+
+✅ Formulários com campos bem destacados para navegação por teclado
+
+✅ Contrastes revisados para leitura confortável
+
+---
+## 📱 Responsividade:
+
+  
+
+✅ Layout adaptado para celulares, tablets e desktops
+
+✅ Menu reorganizado para telas pequenas
+
+✅ Formulários e seções com ajuste de espaçamento em dispositivos móveis
+
+---
+##  Créditos de imagens e fontes:
+
+- Imagens usadas são de bancos gratuitos (ex.: [Unsplash](https://unsplash.com), [Pexels](https://www.pexels.com)) ou de produção própria.
+
+- Textos e descrições de produtores são autorais, revisados com IA criados exclusivamente para o projeto Agrinho 2025.
+
+- Videos utilizados são públicos e localizados no YouTube, créditos: Alzana Almerinda (pão de fermentação natural) Vovó do interior (pão de milho caseiro)
+
+##  Link de acesso ao site publicado:
+
+👉 [https://viniii9.github.io/projeto-para-o-agrinho-2025/](https://viniii9.github.io/projeto-para-o-agrinho-2025/)
+
