@@ -6,43 +6,13 @@
   <title>Sabores da Terra & Conexões Urbanas</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      cursor: none;
-    }
-    .custom-cursor {
-      width: 20px;
-      height: 20px;
-      background-color: rgba(0, 255, 102, 0.9);
-      border-radius: 50%;
-      position: fixed;
-      transform: translate(-50%, -50%);
-      pointer-events: none;
-      transition: transform 0.08s ease-out;
-      z-index: 9999;
-    }
-    .text-3d {
-      text-shadow: 1px 1px 0 #000000,
-                   2px 2px 0 #3e3e3e,
-                   3px 3px 0 #1a1a1a;
-      font-size: 3rem;
-      color: #0bda5e;
-      font-weight: 700;
-    }
-    .text-3d-small {
-      text-shadow: 1px 1px 0 #3b3b3b;
-      font-size: 1.5rem;
-      color: #c3c3c3;
-    }
-  </style>
 </head>
 <body>
-  <div class="custom-cursor" id="custom-cursor"></div>
-
-  <header class="main-header">
+  <header class="cabecalho-principal">
     <div class="container">
-      <h1 class="logo text-3d">Sabores da Terra</h1>
-      <nav class="main-nav">
+      <h1 class="logo">Sabores da Terra</h1>
+      <button class="botao-menu" aria-label="Abrir menu">☰</button>
+      <nav class="navegacao-principal">
         <ul>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#produtores">Produtores</a></li>
@@ -53,64 +23,62 @@
     </div>
   </header>
 
-  <section class="hero">
-    <div class="overlay">
-      <h2 class="text-3d">Conectando o campo à cidade</h2>
-      <p class="text-3d-small">Uma jornada pelos sabores autênticos da terra que chegam à mesa urbana.</p>
-      <a href="https://site-2-agrinho-25.vercel.app/" class="cta-button" rel="noopener noreferrer">Explorar Histórias</a>
+  <section class="destaque">
+    <div class="sobreposicao">
+      <h2>Conectando o campo à cidade</h2>
+      <p>Uma jornada pelos sabores autênticos da terra que chegam à mesa urbana.</p>
+      <a href="https://site-2-agrinho-25.vercel.app/" class="botao-acao" rel="noopener noreferrer">Explorar Histórias</a>
     </div>
   </section>
 
-  <section id="sobre" class="section">
+  <section id="sobre" class="secao">
     <div class="container">
-    <p class="text-3d-small">O projeto Sabores da Terra & Conexões Urbanas nasce da necessidade de aproximar o campo e a cidade, valorizando a cultura alimentar local, os saberes tradicionais e os pequenos produtores rurais. A iniciativa busca criar pontes entre os sabores autênticos do interior e o cotidiano urbano, promovendo experiências gastronômicas, educativas e culturais.</p>
+      <p>O projeto Sabores da Terra & Conexões Urbanas nasce da necessidade de aproximar o campo e a cidade, valorizando a cultura alimentar local, os saberes tradicionais e os pequenos produtores rurais. A iniciativa busca criar pontes entre os sabores autênticos do interior e o cotidiano urbano, promovendo experiências gastronômicas, educativas e culturais.</p>
     </div>
   </section>
 
-  <section id="produtores" class="section">
+  <section id="produtores" class="secao">
     <div class="container">
-      <h2 class="text-3d">Conheça os Produtores</h2>
+      <h2>Conheça os Produtores</h2>
       <div class="cards">
         <div class="card">
-  <h3>Solange - Orgânicos do Vale</h3>
-  <p>Produtora de hortaliças orgânicas no interior de MG.</p>
-  <a href="https://site-3-produtores.vercel.app/" style="display:inline-block; margin-top:10px; padding:10px 16px; background-color:#0bda5e; color:#000; border-radius:6px; text-decoration:none; font-weight:bold;">Visite a historia de Solange</a>
-</div>
+          <h3>Solange - Orgânicos do Vale</h3>
+          <p>Produtora de hortaliças orgânicas no interior de MG.</p>
+          <a href="https://site-3-produtores.vercel.app/" class="link-produtor">Visite a historia de Solange</a>
+        </div>
 
         <div class="card">
           <h3>Ariana - Queijos Artesanais</h3>
-  <p>Queijeira premiada que mistura tradição e inovação.</p>
-  <a href="https://site-3-produtores-6c7m.vercel.app/" style="display:inline-block; margin-top:10px; padding:10px 16px; background-color:#0bda5e; color:#000; border-radius:6px; text-decoration:none; font-weight:bold;">Visite a historia de Ariana</a>
-</div>
+          <p>Queijeira premiada que mistura tradição e inovação.</p>
+          <a href="https://site-3-produtores-6c7m.vercel.app/" class="link-produtor">Visite a historia de Ariana</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="receitas" class="section">
+  <section id="receitas" class="secao">
     <div class="container">
-      <h2 class="text-3d">Receitas com História</h2>
-      <ul class="recipe-list">
+      <h2>Receitas com História</h2>
+      <ul class="lista-receitas">
         <li>
           <h4>Pão de fermentação natural da fazenda</h4>
-          <p>Esse pão tem origem nas fazendas da região serrana, onde o cultivo de trigo integral é tradicional e feito de forma sustentável. Com grãos colhidos localmente, a receita valoriza práticas artesanais passadas de geração em geração, resgatando o sabor rústico e saudável do campo. O uso do fermento natural (levain) garante um pão mais nutritivo, leve e com casca crocante, refletindo a conexão entre o produtor e a terra.</p>
-          <h4>receita</h4>
-          <p>ingredientes</p>
-        <p>500g de farinha de trigo integral da região</p>
-        <p>350ml de água</p>
-        <p>100g de fermento natural ativo</p>
-      <p>10g de sal</p>
-     <h4>Modo de preparo</h4>
-    <p>Misture a farinha e a água. Deixe descansar 1h (autólise).</p>
-   <p>Adicione o fermento e depois o sal.</p>
-   <p>Sove levemente e faça dobras a cada 30 minutos (3x).</p>
-   <p>Deixe fermentar por 4 a 6 horas em temperatura ambiente.</p>
-   <p>Modele, leve à geladeira por 8 a 12 horas (fermentação lenta).</p>
-   <p>Asse em forno pré-aquecido a 230 °C por cerca de 40 minutos.</p>
+          <p>Esse pão tem origem nas fazendas da região serrana, onde o cultivo de trigo integral é tradicional e feito de forma sustentável.</p>
+          <h4>Receita</h4>
+          <p>Ingredientes</p>
+          <p>500g de farinha de trigo integral da região</p>
+          <p>350ml de água</p>
+          <p>100g de fermento natural ativo</p>
+          <p>10g de sal</p>
+          <h4>Modo de preparo</h4>
+          <p>Misture a farinha e a água. Deixe descansar 1h.</p>
+          <p>Adicione o fermento e depois o sal.</p>
+          <p>Sove levemente e faça dobras a cada 30 minutos (3x).</p>
+          <p>Deixe fermentar por 4 a 6 horas em temperatura ambiente.</p>
         </li>
         <li>
           <h4>Pão Caseiro de Milho</h4>
-          <p>O pão caseiro de milho é uma receita tradicional do interior do Brasil, especialmente popular nas regiões rurais do Paraná. Surgiu como uma forma de aproveitar o fubá, ingrediente abundante nas lavouras da região. Preparado em fogões a lenha, esse pão representa a simplicidade e o sabor das cozinhas de roça, sendo comum em cafés da manhã ou da tarde em famílias do campo.</p>
-          <h4>ingredientes</h4>
+          <p>O pão caseiro de milho é uma receita tradicional do interior do Brasil, especialmente popular nas regiões rurais do Paraná.</p>
+          <h4>Ingredientes</h4>
           <p>2 xícaras de fubá</p>
           <p>2 xícaras de farinha de trigo</p>
           <p>2 ovos</p>
@@ -124,16 +92,16 @@
           <p>Deixe crescer por cerca de 1 hora.</p>
           <p>Modele os pães, coloque em forma untada.</p>
           <p>Deixe crescer mais 30 minutos.</p>
-          <p>Asse em forno pré-aquecido a 180 °C por cerca de 35 minutos, ou até dourar.</p>
+          <p>Asse em forno pré-aquecido a 180 °C por cerca de 35 minutos.</p>
         </li>  
       </ul>
     </div>
   </section>
 
-  <section id="contato" class="section">
+  <section id="contato" class="secao">
     <div class="container">
-      <h2 class="text-3d">Entre em Contato</h2>
-      <form class="contact-form">
+      <h2>Entre em Contato</h2>
+      <form class="formulario-contato">
         <input type="text" placeholder="Nome" required />
         <input type="email" placeholder="Email" required />
         <textarea placeholder="Mensagem" rows="5" required></textarea>
@@ -142,29 +110,22 @@
     </div>
   </section>
 
-  <footer class="footer">
+  <footer class="rodape">
     <div class="container">
       <p>&copy; 2025 Sabores da Terra & Conexões Urbanas. Feito por Marcos Vinicius.</p>
-      <p>Colegio professor Reni Correia Gamper</p>
+      <p>Colégio Prof(a). Reni Correia Gamper</p>
     </div>
   </footer>
 
-  <div class="animated-3d">
+  <div id="container-acessibilidade">
+    <button id="botao-contraste">Ativar Alto Contraste</button>
+    <div id="controles-fonte">
+      <button class="aumentar-fonte">A+</button>
+      <button class="diminuir-fonte">A-</button>
+      <button class="resetar-fonte">A</button>
+    </div>
   </div>
 
-  <script>
-    const cursor = document.getElementById('custom-cursor');
-    document.addEventListener('mousemove', (e) => {
-      cursor.style.left = `${e.clientX}px`;
-      cursor.style.top = `${e.clientY}px`;
-    });
-
-    const cube = document.querySelector('.animated-3d');
-    document.addEventListener('mousemove', (e) => {
-      const xAxis = (window.innerWidth / 2 - e.pageX) / 25;
-      const yAxis = (window.innerHeight / 2 - e.pageY) / 25;
-      cube.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
-    });
-  </script>
+<script src="script.js"></script>
 </body>
 </html>
