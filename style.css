@@ -211,8 +211,11 @@ body {
 }
 
 /* 3D Elements (placeholders for interaction) */
-
-
+.animated-3d { width: 100px; 
+  height: 100px; background: linear-gradient(45deg, #0bda5e, #3c4e3f); 
+  margin: 30px auto; transform-style: preserve-3d; transform: rotateX(0deg) rotateY(0deg); 
+  transition: transform 0.1s ease-out; border-radius: 10px; 
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
 /* Mouse effect handler */
 body:hover .animated-3d {
   animation: float 6s ease-in-out infinite;
