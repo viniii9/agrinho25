@@ -7,6 +7,9 @@
 ### Tema:Festejando a conexão campo-cidade
 ### Site:Sabores da Terra e Conexês Urbanas
 
+### Texto escrito por mim porém melhorado com inteligência artificial(I.A) Prompt utilizado: melhore esse texto para que fique mais formal, e resolução de alguns erros 
+
+
 # Referencias:
 imagens: Google, todas as imagens são usadas de sites gratuitos com liçença aberta
 
