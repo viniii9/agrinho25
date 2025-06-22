@@ -214,16 +214,16 @@ body {
 body {
   margin: 0;
   height: 100vh;
-  background-color: #f0f0f0; /* fundo geral da página */
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center;     /* centraliza verticalmente */
+  background-color: #f0f0f0; /* opcional */
 }
 
 .animated-3d {
   width: 200px;
   height: 200px;
-  background-color: white; /* fundo do quadrado */
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -234,7 +234,7 @@ body {
 }
 
 .animated-3d img {
-  width: 100px; /* imagem menor */
+  width: 100px;
   height: auto;
   border-radius: 8px;
   pointer-events: none;
