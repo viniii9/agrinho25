@@ -212,15 +212,25 @@ body {
 
 /* 3D Elements (placeholders for interaction) */
 .animated-3d {
-  width: 100px;
-  height: 100px;
-  background: linear-gradient(45deg, #0bda5e, #3c4e3f);
-  margin: 30px auto;
-  transform-style: preserve-3d;
-  transform: rotateX(0deg) rotateY(0deg);
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222; /* cor de fundo do quadrado */
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
   transition: transform 0.1s ease-out;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+.animated-3d img {
+  width: 150px; /* ajuste o tamanho da imagem */
+  height: auto;
+  border-radius: 8px;
+  transform-style: preserve-3d;
+  pointer-events: none; /* evita interferência no efeito do mouse */
+}
+
 }
 
 /* Mouse effect handler */
