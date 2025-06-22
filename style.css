@@ -214,7 +214,7 @@ body {
 .animated-3d {
   width: 100px;
   height: 100px;
-  background-image: url('caminho/da-sua-imagem.jpg'); /* ⬅ troque pelo caminho real da imagem */
+  background-image: url"img/reni-removebg-preview.png"; 
   background-size: cover;
   background-position: center;
   margin: 30px auto;
